@@ -30,31 +30,31 @@ clear
 echo -e "\033[0;35m--------------------------------------------------\033[0m"
 figlet ....MRX470....
 echo -e "\033[0;35m--------------------------------------------------\033[0m"
-sleep 2
+sleep 3
 tput setaf 2 ; tput bold ; echo "                  INSTALANDO MENU"; tput sgr0
     wget https://www.dropbox.com/s/njb28t3bcmkz1t9/menu -O /bin/menu 1> /dev/null 2> /dev/stdout
     chmod +x /bin/menu
-sleep 2
+sleep 3
 tput setaf 3 ; tput bold ; echo "       INSTALANDO ADMINISTRADOR DE USUARIOS"; tput sgr0
     wget https://www.dropbox.com/s/avd7idmu5my7qxx/adm -O /bin/adm 1> /dev/null 2> /dev/stdout
     chmod +x /bin/adm
-sleep 2
-tput setaf 7 ; tput bold ; echo "        INSTALANDO  GENERADOR DE PAYLOADS"; tput sgr0
-    wget https://www.dropbox.com/s/ayc1siw2vq0thwi/esqueleton -O /bin/esqueleton 1> /dev/null 2> /dev/stdout
-    chmod +x /bin/esqueleton
-sleep 2
+sleep 3
+tput setaf 7 ; tput bold ; echo "        INSTALANDO  GENERADOR DE BACKUP"; tput sgr0
+    wget https://github.com/vpsvip7/SSHPLUS/blob/main/Modulos/userbackup -O /bin/userbackup 1> /dev/null 2> /dev/stdout
+    chmod +x /bin/userbackup
+sleep 3
 tput setaf 4 ; tput bold ; echo "         INSTALANDO ADMINISTRADOR DE VPS"; tput sgr0
     wget https://www.dropbox.com/s/1qzd3gjhm1fprok/adm2 -O /bin/adm2 1> /dev/null 2> /dev/stdout
     chmod +x /bin/adm2
-sleep 2
+sleep 3
 tput setaf 5 ; tput bold ; echo "     INSTALANDO MENU DE  ADMINISTRADOR DE VPS"; tput sgr0
     wget https://www.dropbox.com/s/73mhj1aru7knkuy/adm2fun -O /bin/adm2fun 1> /dev/null 2> /dev/stdout
     chmod +x /bin/adm2fun
-sleep 2
+sleep 3
 tput setaf 7 ; tput bold ; echo "              INSTALANDO HERRAMIENTAS"; tput sgr0
     wget https://www.dropbox.com/s/hk2zjgri8c8dicy/adm3 -O /bin/adm3 1> /dev/null 2> /dev/stdout
     chmod +x /bin/adm3
-sleep 2
+sleep 3
 tput setaf 2 ; tput bold ; echo "          INSTALANDO MENU DE HERRAMIENTAS"; tput sgr0
     wget https://www.dropbox.com/s/8bdgxagyq4yvfek/adm3fun -O /bin/adm3fun 1> /dev/null 2> /dev/stdout
     chmod +x /bin/adm3fun
