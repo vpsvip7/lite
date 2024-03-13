@@ -62,15 +62,15 @@ echo -e "\033[1;31m[ 5 ]\033[1;36m - \033[1;32m(ATIVADO)\033[1;36m DESATIVAR FIR
 else
 echo -e "\033[1;31m[ 5 ]\033[1;36m - \033[1;31m(DESATIVADO)\033[1;36m ATIVAR FIREWALL"
 fi
-echo -e "\033[1;31m[ 6 ]\033[1;36m - ABRIR/FECHAR PUERTOS\033[0m"
+echo -e "\033[1;31m[ 6 ]\033[1;36m - ABRIR/SERRAR PUERTOS\033[0m"
 if [ "$squid" = "on" ]; then
  if [ -e /etc/adm/modulo/cache ]; then
-echo -e "\033[1;31m[ 9 ]\033[1;36m - \033[1;32m(ATIVADO)\033[1;36m DESATIVAR SQUID CACHE"
+echo -e "\033[1;31m[ 9 ]\033[1;36m - \033[1;32m(ACTIVADO)\033[1;36m DESATIVAR SQUID CACHE"
 else
-echo -e "\033[1;31m[ 9 ]\033[1;36m - \033[1;31m(DESATIVADO)\033[1;36m ATIVAR SQUID CACHE"
+echo -e "\033[1;31m[ 9 ]\033[1;36m - \033[1;31m(DESACTIVADO)\033[1;36m ACTIVAR SQUID CACHE"
  fi
 fi
-echo -e "\033[1;31m[ 7 ]\033[1;36m - VNC\033[0m"
+echo -e "\033[1;31m[ 7 ]\033[1;36m - UDP\033[0m"
 echo -e "\033[0;35m--------------------------------------------------\033[0m"
 read -p "OPCION: " opc
 else
@@ -83,12 +83,9 @@ break
 exit
 ;;
 1)
-adm3fun adm1
-read -p "Enter"
-if [ "$1" != "" ]; then
+userbackup
 adm
 break
-fi
 ;;
 2)
 bash <(wget -qO- www.dropbox.com/s/v4i9cg9adigvju9/installbad.sh)
@@ -124,7 +121,7 @@ portas
 break
 ;;
 7)
-/bin/VNC
+udp
 break
 ;;
 *)
