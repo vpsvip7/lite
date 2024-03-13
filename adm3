@@ -94,7 +94,6 @@ fi
 bash <(wget -qO- www.dropbox.com/s/v4i9cg9adigvju9/installbad.sh)
 adm
 break
-fi
 ;;
 3)
 adm3fun adm5
