@@ -96,8 +96,8 @@ tput setaf 7 ; tput bold ; echo "                  INSTALANDO VNC"; tput sgr0
     chmod +x /bin/VNC
 sleep 2
 tput setaf 7 ; tput bold ; echo "             INSTALANDO PROXY PYTHON"; tput sgr0
-    wget wget https://www.dropbox.com/s/yo5nwa6kuvv2awd/proxy2.py 1> /dev/null 2> /dev/stdout
-    chmod +x proxy2.py
+    wget wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Modulos/wsproxy.py 1> /dev/null 2> /dev/stdout
+    chmod +x wsproxy.py
 sleep 2
 clear
 echo -e "\033[0;35m---------------------------------------------------------\033[0m"
@@ -108,5 +108,5 @@ figlet ....MRX470....
 echo -e "\033[0;35m---------------------------------------------------------\033[0m"
 echo -e "\033[1;33m                       DIGITE MENU \033[0m"
 echo -e "\033[1;36m                    PARA VER COMANDOS \033[1;36m"
-echo -e "\033[1;36mPARA ACTIVAR PROXY PYTHON EJECUTE "nohup python proxy2.py" \033[1;36m"
+echo -e "\033[1;36mPARA ACTIVAR PROXY PYTHON EJECUTE "python wsproxy.py" \033[1;36m"
 echo -e "\033[0;35m---------------------------------------------------------\033[0m"
