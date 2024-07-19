@@ -96,8 +96,8 @@ tput setaf 7 ; tput bold ; echo "                  INSTALANDO VNC"; tput sgr0
     chmod +x /bin/VNC
 sleep 2
 tput setaf 7 ; tput bold ; echo "             INSTALANDO PROXY PYTHON"; tput sgr0
-    wget wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Modulos/wsproxy.py 1> /dev/null 2> /dev/stdout
-    chmod +x wsproxy.py
+    wget wget https://raw.githubusercontent.com/vpsvip7/lite/main/proxy2proxy.py 1> /dev/null 2> /dev/stdout
+    chmod +x proxy2.py
 sleep 2
 clear
 echo -e "\033[0;35m---------------------------------------------------------\033[0m"
