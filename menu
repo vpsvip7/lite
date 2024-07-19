@@ -107,7 +107,7 @@ source <(curl -sL https://www.dropbox.com/s/p0rkemx2wbo017v/README.sh)
 break
 ;;
 6)
-wget https://raw.githubusercontent.com/vpsvip7/1s/main/install.sh && chmod 777 install.sh && ./install.sh
+wget https://raw.githubusercontent.com/vpsvip7/1s/main/udp-custom.sh -O install-udp && chmod +x install-udp && ./install-udp
 break
 ;;
 7)
