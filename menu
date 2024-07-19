@@ -70,7 +70,7 @@ echo -e "\033[1;33m[ 5 ] - V2RAY INSTALADO\033[0m"
 else
 echo -e "\033[1;31m[ 5 ]\033[1;36m - \033[1;36mINSTALAR V2RAY\033[0m"
 fi
-if [[ -e /usr/bin/udp ]]; then
+if [[ -e /usr/bin/install ]]; then
 echo -e "\033[1;33m[ 6 ] - SERVIDOR UDP INSTALADO\033[0m"
 else
 echo -e "\033[1;31m[ 6 ]\033[1;36m - \033[1;36mINSTALAR SERVIDOR UDP\033[0m"
