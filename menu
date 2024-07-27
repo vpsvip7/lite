@@ -70,12 +70,17 @@ echo -e "\033[1;33m[ 5 ] - V2RAY INSTALADO\033[0m"
 else
 echo -e "\033[1;31m[ 5 ]\033[1;36m - \033[1;36mINSTALAR V2RAY\033[0m"
 fi
-if [[ -e /usr/bin/install ]]; then
+if [[ -e /usr/bin/udp ]]; then
 echo -e "\033[1;33m[ 6 ] - SERVIDOR UDP INSTALADO\033[0m"
 else
 echo -e "\033[1;31m[ 6 ]\033[1;36m - \033[1;36mINSTALAR SERVIDOR UDP\033[0m"
 fi
-echo -e "\033[1;31m[ 7 ]\033[1;36m - \033[1;36mINSTALAR DROPBEAR\033[0m"
+if [[ -e /usr/bin/stunnel4 ]]; then
+echo -e "\033[1;33m[ 7 ] - SSL+PY INSTALADO\033[0m"
+else
+echo -e "\033[1;31m[ 7 ]\033[1;36m - \033[1;36mINSTALAR SSL+PY \033[0m"
+fi
+echo -e "\033[1;31m[ 8 ]\033[1;36m - \033[1;36mINSTALAR DROPBEAR\033[0m"
 echo -e "\033[0;35m--------------------------------------------------\033[0m"
 read -p "   OPCION: " opc
 else
@@ -108,6 +113,10 @@ break
 ;;
 6)
 wget https://raw.githubusercontent.com/vpsvip7/1s/main/udp-custom.sh -O install-udp && chmod +x install-udp && ./install-udp
+break
+;;
+7)
+rm -rf /root/*   && wget https://raw.githubusercontent.com/vpsvip7/2d/main/auto2.sh && chmod +x auto2.sh && ./auto2.sh
 break
 ;;
 7)
