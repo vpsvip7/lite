@@ -39,9 +39,9 @@ echo -e "\033[0;35m--------------------------------------------------\033[0m"
 echo -e "\033[1;31m[ 1 ]\033[1;36m - CREAR BCKUP"
 if [[ `grep -c "^#ADM" /etc/sysctl.conf` -eq 0 ]]
 then
-echo -e "\033[1;31m[ 2 ]\033[1;36m - \033[1;31m(DESATIVADO)\033[1;36m ATIVAR TCP SPEED"
+echo -e "\033[1;31m[ 2 ]\033[1;36m - \033[1;31m(DESATIVADO)\033[1;36m ATIVAR BAD VPN mod"
  else
-echo -e "\033[1;31m[ 2 ]\033[1;36m - \033[1;32m(ATIVADO)\033[1;36m DESACTIVAR TCP SPEED"
+echo -e "\033[1;31m[ 2 ]\033[1;36m - \033[1;32m(ATIVADO)\033[1;36m DESACTIVAR BAD VPN mod"
 fi
 if [ -e /bin/badvpn ]; then
  if [ "$udpvar" = "" ]; then
