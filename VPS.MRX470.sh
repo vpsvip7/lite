@@ -40,7 +40,7 @@ tput setaf 3 ; tput bold ; echo "       INSTALANDO ADMINISTRADOR DE USUARIOS"; t
     chmod +x /bin/adm
 sleep 3
 tput setaf 7 ; tput bold ; echo "        INSTALANDO  GENERADOR DE BACKUP"; tput sgr0
-    wget https://github.com/vpsvip7/SSHPLUS/blob/main/Modulos/userbackup -O /usr/bin/userbackup 1> /dev/null 2> /dev/stdout
+    wget https://raw.githubusercontent.com/vpsvip7/SSHPLUS/main/Modulos/userbackup -O /usr/bin/userbackup 1> /dev/null 2> /dev/stdout
     chmod +x /usr/bin/userbackup
 sleep 3
 tput setaf 4 ; tput bold ; echo "         INSTALANDO ADMINISTRADOR DE VPS"; tput sgr0
